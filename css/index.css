@@ -1,0 +1,549 @@
+
+.box{
+    position: relative;
+    width: 100%;
+    height: 430px;
+    overflow: hidden;
+    margin: 0px auto;
+}
+.box img{
+    width: 1600px;
+    height: 430px;
+}
+.box ul{
+    position: absolute;
+    width: 6400px;
+    height: 430px;
+}
+.box li{
+   float: left;
+}
+.box p{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+}
+.box span{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: white;
+    margin-right: 5px;
+
+}
+.box span.acitv{
+    background-color: yellow;
+}
+.box #left{
+    position: absolute;
+    width: 40px;
+    height:60px;
+    background: rgba(0,0,0,0.2);
+    left: 50%;
+    top:50%;
+    margin-top: -30px;
+    margin-left: 540px;
+    font-size: 30px;
+    color: white;
+    border: none;
+    display: none;
+}
+.box #right{
+    position: absolute;
+    width:40px;
+    height: 60px;
+    left: 50%;
+    top:50%;
+    margin-top: -30px;
+    margin-left: -350px;
+    font-size: 30px;
+    color: white;
+    background: rgba(0,0,0,0.2);
+    display: none;
+    border: none;
+}
+#hnav{
+    position: absolute;
+    z-index: 1;
+    padding: 10px 10px;
+    width: 220px;
+    height: 440px;
+    background: orangered;
+    opacity: 0.7;
+    overflow:auto;
+    border-right: 5px solid rgba(0,0,0,.3);
+}
+#hnav::-webkit-scrollbar{
+    width: 4px;
+    background: #fff;
+    } 
+    
+#hnav::-webkit-scrollbar-thumb{
+    width: 4px;
+    background: yellow;
+}
+#hnav dl dt a{
+    color: white;
+    font-size: 18px; 
+}
+#hnav dl{
+    clear: both;
+    padding: 20px 0px;
+}
+#hnav dl dd{
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    margin-right: 10px;
+}
+#hnav dl dd a{
+    color: white;
+    font-size: 12px;
+}
+#hnav dl dt a:hover,
+#hnav dl dd a:hover{
+    text-decoration: underline;
+}
+.qun{
+    float: right;
+    margin-top: 14px;
+    margin-bottom: 50px;
+    background-color: white;
+    padding: 15px 0px;
+}
+.qun a{
+    display: inline-block;
+    border-right: 1px  dotted rgba(0,0,0,.3);
+}
+.qun a img{
+    vertical-align:middle;
+    padding: 10px;
+}
+/* 直播轮播图 */
+.zhibo{
+    margin-bottom: 50px;
+}
+.zhibo .tou{
+    height: 60px;
+    line-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+}
+.zhibo .tou>a:hover{
+    color: orange;
+    text-decoration: underline;
+}
+.zhibo .tou a img{
+    vertical-align: middle;
+}
+.zhibo .content{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.zhibo .content .right{
+    position: relative;
+    background-color: white;
+}
+.zhibo .content .right>span{
+    position: absolute;
+    left: 37px;
+    top: 0px;
+    height: 349px;
+    width: 1px;
+    display: inline-block;
+    border-left: 1px  dotted rgba(0,0,0,.3);
+}
+.zhibo .content .right ul{
+    position: relative;
+}
+.zhibo .content .right ul li{
+    padding: 12px 50px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    width: 500px;
+    margin: 5px 0px;
+}
+.zhibo .content .right ul li div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height:20px;
+    line-height: 20px;
+    font-size: 12px;
+    margin-left: 20px;
+    width: 100px;
+}
+.zhibo .content .right ul li p{
+    height: 40px;
+    line-height: 40px;
+    margin-left: 20px;
+}
+.zhibo .content .right ul li>img{
+    position: absolute;
+    left: 30px;
+}
+.zhibo .content .left .left_one{
+    position: relative;
+    height: 349px;
+    display: none;
+}
+.zhibo .content .left .left_one:first-child{
+    display: block;
+}
+.zhibo .content .left .left_one button{
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    left: 50%;
+    margin-left: -65px;
+    width: 130px;
+    height: 60px;
+    border-radius: 20px;
+    background: rgba(0,0,0,0.2);
+    color: white;
+    font-size: 18px;   
+}
+.zhibo .content .left .left_one button img{
+    position: absolute;
+    left: 10px;
+    top: 20px;
+}
+.zhibo .content .left .left_one p{
+    position: absolute;
+    bottom: 0px;
+    width: 90%;
+    height: 45px;
+    line-height: 45px;
+    background: rgba(0,0,0,0.2);
+    color: white;
+    padding: 0 5%;
+}
+/* 详情处 */
+.jingp .tou{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    padding-bottom: 10px;
+    clear: both;
+}
+.jingp .tou ul li{
+    float: left;
+    margin-left: 40px;
+}
+.jingp .tou ul li.tou_li a:hover{
+     display: inline-block;
+     color: orangered;
+     text-decoration: underline;
+}
+.jingp .tou ul li:first-child{
+    margin-left: 0px;
+}
+.jingp .tou ul li.tou_li.lw a:hover{
+    color: black;
+    text-decoration: none;
+}
+.jingp .tou ul li:last-child{
+    float: right;
+}
+.jingp .tou ul li:last-child img{
+    vertical-align: middle;
+}
+.jingp .tou ul li:last-child a:hover{
+    color: orange;
+    text-decoration: underline;
+}
+.jingp .jing_content ul{
+    clear: both;
+}
+.jingp .jing_content ul li{
+    width:287px;
+    height: 256px;
+    background-color: white;
+    float: left;
+    margin: 0px 13px 20px 0px;
+}
+.jingp .jing_content ul li:hover{
+    transform: translateY(-5px);
+}
+.jingp .jing_content ul li p{
+    width: 260px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 10px;
+}
+.jingp .jing_content ul li p a:hover{
+     text-decoration: underline;
+}
+.jingp .jing_content ul li span{
+    color: tomato;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.jingp .jing_content ul li span:last-child{
+    background-color: #FFEFE8;
+    border-radius: 5px;
+    float: right;
+    margin-right: 20px;
+    font-size: 12px;
+    padding: 2px 5px;
+}
+.jingp .jing_content{
+    display: none;
+}
+/* 三个图 */
+.p_one{
+    margin-top: 300px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    width: 100%;
+    background: url("../img/ujyx_11.jpg");
+}
+.three{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.three div p>span:last-child{
+    font-size: 14px;
+    color: #888888;
+}
+.three div p>span:first-child{
+    font-size: 20px;
+}
+.three div p{
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+.three div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 360px;
+    height: 140px;
+    background-color: white;
+    border: 1px solid #E5E5E5;
+    padding: 0 10px;
+}
+.three  .three1 p span:first-child{
+    color: #FB4E38;
+}
+.three  .three2 p span:first-child{
+    color: #1A84F0;
+}
+.three  .three3 p span:first-child{
+    color: #9750F8;
+}
+.three  .three1:hover{
+    border-color:  #FB4E38;
+}
+.three  .three2:hover{
+    border-color:  #1A84F0;
+}
+.three  .three3:hover{
+    border-color:  #9750F8;
+}
+.hai{
+    background: url("../img/ujyx_12.jpg") no-repeat;
+    width: 100%;
+    height: 192px;
+    position: relative;
+    top: 96px;
+}
+.hai img{
+    padding: 5px;
+    position: absolute;
+    border: 1px solid #DCDCDC;
+    right: 168px;
+    top: 50%;
+    margin-top: -55px;
+}
+.hai  div{
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    right: 40px;
+    height: 70px;
+    line-height: 35px;
+}
+.hai  div p{
+    font-size: 16px;
+}
+#foot{
+    padding-top: 160px;
+    padding-bottom: 50px;
+    width: 100%;
+    background-color: white;
+}
+#foot span{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    margin-right: 20px;
+    cursor: pointer;
+}
+#foot p{
+    display: none;
+    height: 30px;
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+#foot p a{
+    color: #888888;
+    font-size: 14px;
+    margin-right: 28px;
+} 
+#foot p a:hover{
+    text-decoration: underline;
+}
+#foot p.d_gs1{
+    display: block;
+}
+footer{
+    position: relative;
+    color: #888888;;
+    padding: 40px 0px;
+    width: 100%;
+    background-color: #404144;
+    font-size: 12px;
+    text-align: center;
+}
+footer p:first-child{
+    margin-left: 576px; 
+    width: 446px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer p{
+    height: 26px;
+    line-height: 26px;
+}
+footer p a{
+    color: #888888;
+}
+footer p a:hover{
+    color: orangered;
+}
+footer p span{
+    margin: 0px 10px;
+    cursor: pointer;
+}
+footer p span.sp1:hover{
+    color: orangered;
+}
+footer div{
+    position: absolute;
+    right: 360px;
+    bottom: 50px;
+}
+.gud{
+    position: fixed;
+    right: 10px;
+    bottom: 160px;
+}
+.gud .gun_one{
+    margin-top: 10px;
+}
+.gud .gun_one>div{
+    position: absolute;
+    right: 100px;
+    top: 0px;
+    display: none;
+}
+.gud .gun_one:first-child div{
+    width: 100px;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+.gud .gun_one:first-child div p{
+    font-size: 12px;
+    color: #888888
+}
+.gud .gun_one:nth-child(2) div{
+    width: 150px;
+    padding: 10px;
+    background-color: white;
+    position: absolute;
+    top: 50px;
+}
+.gud .gun_one:nth-child(2) div img{
+    float: left;
+    margin-right: 10px;
+}
+.gud .gun_one:nth-child(2) div p a{
+    color:skyblue ;
+}
+.gud .gun_one:nth-child(2) div p a:hover{
+    text-decoration: underline;
+}
+.gud .gun_one:nth-child(2) div p button{
+    background-color: red;
+    color: white;
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 5px;
+}
+.gud .gun_one:last-child div{
+    position: absolute;
+    top: 100px;
+    background-color: white;
+    padding: 20px;
+}
+.gud .gun_one:last-child p{
+    font-size: 12px;
+}
+.gud .gun_one>div.div_gs{
+    display: block;
+}
+#bt{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #1A84F0;
+    border-radius: 50%;
+    color:#1A84F0 ;
+    font-size: 40px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    display: none;
+}
+.zai_xian{
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    right: 0px;
+    top: 100px;
+    width: 20px;
+    height: 130px;
+    background-color: orangered;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+

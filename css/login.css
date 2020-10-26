@@ -1,0 +1,88 @@
+.wrop{
+    border-bottom: 1px solid #E6E6E6;
+}
+body{
+    background-color: white;
+}
+.main .left{
+    float: left;
+    /* width: 600px; */
+    text-align: center;
+    margin-top: 60px;
+    padding:0 180px 0 130px;
+    border-right: 1px solid #E6E6E6;
+}
+/* .main .left form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+.main .left form input{
+    height: 38px;
+    width: 250px;
+    padding: 0 5px;
+    border: 1px solid #E6E6E6;
+}
+.main .left form p{
+    display: flex;
+    justify-content:flex-end;
+    height: 40px;
+    line-height: 40px;
+    width: 480px;
+}
+.main .left form p em{
+    display: inline-block;
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    font-size:12px;
+    color: red;
+}
+.main .left form p{
+    margin-bottom: 20px;
+}
+.main .left form div{
+    width: 250px;
+    margin-left:200px ;
+}
+.main .left form div a{
+    height: 45px;
+    line-height: 45px;
+    font-size: 12px;
+    padding-right: 30px;
+}
+.main .left form p a:hover{
+    text-decoration: underline;
+    color: orangered;
+}
+.main .left form button{
+    height: 38px;
+    width: 260px;
+    background-color: #FF4A00;
+    color: white;
+    font-size: 16px;
+}
+.main .right{
+    float: right;
+    margin-top: 60px;
+    padding-right: 100px;
+}
+.main .right p{
+    font-size: 14px;
+    font-family: "华文中宋";
+    height: 30px;
+    line-height:30px;
+    color:rgba(0,0,0,0.8);
+}
+.main .right p:nth-child(2){
+    height: 88px;
+    line-height: 88px;
+}
+.main .right p img{
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.main{
+    height: 488px;
+    clear: both;
+}

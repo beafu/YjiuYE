@@ -1,0 +1,244 @@
+body{
+    background-color: white;
+}
+.cont{
+    width: 100%;
+    height: 420px;
+    background: url("../img/5bbacbd1d444c.png") no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.cont .content{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.cont .content .right{
+    position: relative;
+    background-color: white;
+}
+.cont .content .right>span{
+    position: absolute;
+    left: 37px;
+    top: 0px;
+    height: 349px;
+    width: 1px;
+    display: inline-block;
+    border-left: 1px  dotted rgba(0,0,0,.3);
+}
+.cont .content .right ul{
+    position: relative;
+}
+.cont .content .right ul li{
+    padding: 12px 50px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    width: 500px;
+    margin: 5px 0px;
+}
+.cont .content .right ul li div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height:20px;
+    line-height: 20px;
+    font-size: 12px;
+    margin-left: 20px;
+    width: 100px;
+}
+.cont .content .right ul li p{
+    height: 40px;
+    line-height: 40px;
+    margin-left: 20px;
+}
+.cont .content .right ul li>img{
+    position: absolute;
+    left: 30px;
+}
+.cont .content #left .left_one{
+    position: relative;
+    height: 349px;
+    display: none;
+}
+.cont .content #left .left_one:first-child{
+    display: block;
+}
+.cont .content #left .left_one button{
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    left: 50%;
+    margin-left: -65px;
+    width: 130px;
+    height: 60px;
+    border-radius: 20px;
+    background: rgba(0,0,0,0.2);
+    color: white;
+    font-size: 18px;   
+}
+.cont .content #left .left_one button img{
+    position: absolute;
+    left: 10px;
+    top: 20px;
+}
+.cont .content #left .left_one p{
+    position: absolute;
+    bottom: 0px;
+    width: 90%;
+    height: 45px;
+    line-height: 45px;
+    background: rgba(0,0,0,0.2);
+    color: white;
+    padding: 0 5%;
+}
+.selic .tou{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    padding-bottom: 10px;
+    clear: both;
+    padding-top: 10px;
+}
+.selic .tou ul li{
+    float: left;
+    margin-left: 40px;
+}
+.selic .tou ul li.tou_li a:hover{
+     display: inline-block;
+     color: orangered;
+     text-decoration: underline;
+}
+.selic .tou ul li:first-child{
+    margin-left: 0px;
+}
+.selic .tou ul li.tou_li.lw a:hover{
+    color: black;
+    text-decoration: none;
+}
+.selic .tou ul li:last-child{
+    float: right;
+}
+.selic .tou ul li:last-child img{
+    vertical-align: middle;
+}
+.selic .tou ul li:last-child a:hover{
+    color: orange;
+    text-decoration: underline;
+}
+.selic .se_con ul li img{
+    width: 384px;
+    height: 220px;
+    vertical-align: middle;
+}
+.selic .se_con ul li{
+    height: 320px;
+    width: 383px;
+    border: 1px solid #E5E5E5;
+    float: left;
+    margin: 0px 22px 20px 0px;
+}
+.selic .se_con ul li:hover{
+    transform: translateY(-5px);
+}
+.selic .se_con ul li:nth-child(3){
+    margin-right: 0px;
+}
+.selic .se_con ul li p a{
+    font-size: 14px;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 10px;
+}
+.selic .se_con ul li p a:hover{
+    text-decoration: underline;
+}
+.selic .se_con ul li span{
+    color: tomato;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.selic .se_con ul li span:last-child{
+    background-color: #FFEFE8;
+    border-radius: 5px;
+    float: right;
+    margin-right: 20px;
+    font-size: 12px;
+    padding: 2px 5px;
+}
+.selic .se_con{
+    clear: both;
+    display: none;
+}
+.selic .se_con ul li.tou_li.lw a:hover{
+    color: black;
+    text-decoration: none;
+}
+.inner{
+    clear: both;
+}
+.inner .hai{
+    background: url("../img/ujyx_12.jpg") no-repeat;
+    width: 100%;
+    height: 192px;
+    position: relative;
+    margin-bottom: 60px;
+}
+.inner .hai img{
+    padding: 5px;
+    position: absolute;
+    border: 1px solid #DCDCDC;
+    right: 168px;
+    top: 50%;
+    margin-top: -55px;
+}
+.inner .hai  div{
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    right: 40px;
+    height: 70px;
+    line-height: 35px;
+}
+.inner .hai  div p{
+    font-size: 16px;
+}
+footer{
+    position: relative;
+    color: #888888;;
+    padding: 40px 0px;
+    width: 100%;
+    background-color: #404144;
+    font-size: 12px;
+    text-align: center;
+}
+footer p:first-child{
+    margin-left: 576px; 
+    width: 446px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer p{
+    height: 26px;
+    line-height: 26px;
+}
+footer p a{
+    color: #888888;
+}
+footer p a:hover{
+    color: orangered;
+}
+footer p span{
+    margin: 0px 10px;
+    cursor: pointer;
+}
+footer div{
+    position: absolute;
+    right: 280px;
+    bottom: 50px;
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/zhibo.css">
+</head>
+<body>
+    <div class="wrop">
+        <div class="inner">
+            <header>
+                <a href="#" title="优学—IT职业教育">
+                    <img src="./img/logo_it.jpg" alt="">
+                </a>
+                <ul id="ul-one"></ul>
+               <p>
+                   <input type="text" placeholder="搜索课程" id="input">
+                   <img src="./img/etk_09.jpg" alt="" class="img1">
+                   <img src="./img/shopbar.jpg" alt="">
+                   <img src="./img/ujyx_14.jpg" id="img3">
+                   <a href="./login.html">登录</a>
+                   <a href="./reigst.html">注册</a>
+               </p>   
+            </header>
+            <div class="er">
+                <div>
+                    <img src="./img/ujyx_16.jpg" alt="">
+                    <span>扫码下载</span>
+                    <span>It优学APP</span>
+                </div>
+                <div>
+                    <img src="./img/ujyx_16.jpg" alt="">
+                    <span>扫码下载</span>
+                    <span>It优学APP</span>
+                </div>
+            </div>
+            <div id="hnav">
+            </div>
+        </div>
+    </div>
+<div class="cont">
+    <div class="inner">
+        <div class="content">
+            <div id="left"></div>
+            <div class="right">
+                <span></span>
+                <ul></ul> 
+            </div>
+        </div>
+    </div>
+       
+</div>
+<div class="inner">
+    <div class="selic"></div>
+    <div class="selic"></div>
+</div>
+<div class="inner">
+    <div class="hai" title="ITt培训课程-IT在线课程-培训-视频-教程-优就业">
+        <img src="./img/ujyx_26.jpg" title="ITt培训课程-IT在线课程-培训-视频-教程-优就业">
+        <div>
+            <p>扫描二维码</p>
+            <p>快速下载应用</p>
+        </div>
+    </div>
+</div>
+<footer>
+    <p>
+        <a href="#">关于我们</a><span>|</span>
+        <a href="#">联系我们</a><span>|</span>
+        <a href="#">加入我们</a><span>|</span>
+        <a href="#">版权申明</a><span>|</span>
+        <a href="#">网站地图</a><span>|</span>
+        <a href="#">支付方式</a>
+    
+    </p>
+    <p>Copyright©1999-2018 北京中公教育科技有限公司 .All Rights Reserved 京ICP备10218183号 京ICP证161188号</p>
+    <div>
+        <img src="./img/sm_83x30.png" alt="">
+        <img src="./img/aqkx_83x30.png" alt="">
+    </div>
+</footer>
+<script src="./common/Style.js"></script>
+<script src="./common/move.js"></script>
+<script src="./common/ajax.js"></script>
+<script src="./common/template-web.js"></script>
+<script type="text/html" id="a">
+    <div class="tou">
+        <ul>
+            <li class="tou_li lw"><h2><a href="#">系统直播课</a></h2></li>
+            <li class="tou_li"><a href="#">互联网营销</a></li>
+            <li>
+                <a href="#">更多</a>
+                <img src="./img/ujyx_07.jpg" alt="">
+            </li>
+        </ul>
+    </div>
+    {{each arr value}}
+    <div class="se_con">
+     <ul>
+        {{each value.arrone Item}}
+        <li>
+            <img src="{{Item.src}}" alt="">
+            <p>
+                <a href="#">{{Item.title}}</a>
+            </p>
+            <span>{{Item.span1}}</span>
+            <span>{{Item.span2}}</span>
+        </li>
+        {{/each}}
+     </ul>
+    </div>
+    {{/each}}
+</script>
+<script type="text/html" id="b">
+    {{each shou value}}
+     <li>
+        <a href="{{value.hf}}">{{value.title}}
+            <img src="{{value.src}}" class="jt">
+        </a>
+        {{each value.fen Item}}
+        <ul id="ul_two">
+            <li><a href="#">{{Item.tit1}}</a></li>
+            <li><a href="#">{{Item.tit2}}</a></li>
+        </ul>
+        {{/each}}
+
+        {{each value.tu Item}}
+        <div>
+            <img src="{{Item.src}}" alt="">
+            <span>{{Item.span1}}</span>
+            <span>{{Item.span2}}</span>
+        </div>
+        {{/each}}
+    </li>
+    {{/each}}
+</script>
+<script type="text/html" id="c">
+    <div class="tou">
+        <ul>
+            <li class="tou_li lw"><h2><a href="#">免费直播课</a></h2></li>
+            <li class="tou_li"><a href="#">互联网营销</a></li>
+            <li class="tou_li"><a href="#">程序开发</a></li>
+            <li>
+                <a href="#">更多</a>
+                <img src="./img/ujyx_07.jpg" alt="">
+            </li>
+        </ul>
+    </div>
+    {{each arr value}}
+    <div class="se_con">
+     <ul>
+        {{each value.arrone Item}}
+        <li>
+            <img src="{{Item.src}}" alt="">
+            <p>
+                <a href="#">{{Item.title}}</a>
+            </p>
+            <span>{{Item.span1}}</span>
+            <span>{{Item.span2}}</span>
+        </li>
+        {{/each}}
+     </ul>
+    </div>
+    {{/each}}
+</script>
+<script type="text/html" id="d">
+    {{each left value}}
+    <div class="left_one">
+        <a href="{{value.hf}}">
+        <img src="{{value.src}}">
+      </a>
+        <button>{{value.title}}
+            {{each value.fen Item}}
+            <img src="{{Item.src}}">
+            {{/each}}
+        </button>
+        <p>{{value.infor}}</p>
+    </div>
+    {{/each}}
+</script>
+<script type="text/html" id="e">
+{{each right value}}
+ <li>
+    <img src="{{value.src}}">
+    {{each value.time Item}}
+    <div>
+        <span>{{Item.year}}</span>
+        <span>{{Item.hou}}</span>
+    </div>
+    {{/each}}
+    <p class="right_p">{{value.title}}</p>
+{{/each}}
+</li>
+</script>
+<script>
+    CreateAjax({
+        "type":"get",
+        "url":"./dome.json",
+        "success":function(data){
+            show(JSON.parse(data))
+        }
+    })
+</script>
+<script src="./js/zhibo.js"></script>
+</body>
+</html>

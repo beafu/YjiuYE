@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/regist.css">
+    <link rel="stylesheet" href="./css/publicfoot.css">
+</head>
+<body>
+    <div class="wrop">
+        <div class="inner">
+            <header>
+                <a href="#" title="优学—IT职业教育">
+                    <img src="./img/logo_it.jpg" alt="">
+                </a>
+                <ul id="ul-one"></ul>
+               <p>
+                   <input type="text" placeholder="搜索课程" id="input">
+                   <img src="./img/etk_09.jpg" alt="" class="img1">
+                   <img src="./img/shopbar.jpg" alt="">
+                   <img src="./img/ujyx_14.jpg" id="img3">
+                   <a href="./login.html">登录</a>
+                   <a href="./reigst.html">注册</a>
+               </p>   
+            </header>
+            <div class="er">
+                <div>
+                    <img src="./img/ujyx_16.jpg" alt="">
+                    <span>扫码下载</span>
+                    <span>It优学APP</span>
+                </div>
+                <div>
+                    <img src="./img/ujyx_16.jpg" alt="">
+                    <span>扫码下载</span>
+                    <span>It优学APP</span>
+                </div>
+            </div>
+            <div id="hnav">
+            </div>
+        </div>
+    </div>
+    <div class="inner">
+        <div class="main">
+            <div class="left">
+                <form action="./login.html" id="form">
+                    <p>
+                        手机号：<input type="text" placeholder="请输入手机号" name="number">
+                        <em></em>
+                    </p>
+                    <p>
+                        创建密码：<input type="password" placeholder="请输入密码" name="pas">
+                        <em></em>
+                    </p>
+                    <p>
+                        确认密码：<input type="password" placeholder="请再次密码" name="aginpas">
+                        <em></em>
+                    </p>
+                    <p>
+                        验证码：<input type="text" placeholder="请输入验证码" name="yan">
+                        <span></span>
+                        <em></em>
+                    </p>
+                    <p>
+                        短信验证码：<input type="text" placeholder="请输入验证码" name="infor">
+                        <a href="#" class="mian_a">免费获取短信</a>
+                        <em></em>
+                    </p>
+                    <button type="submit">登录</button>
+                    <p>已有账号，请
+                        <a href="./login.html">登录</a>
+                    </p>
+                   
+                </form>
+            </div>
+            <div class="right">
+                <p>用户专享服务：</p>
+                <p>极致的视频学习体验</p>
+                <p>丰富的直播课程免费学</p>
+                <p>开课提醒，不错过每一次精彩</p>
+                <p>讲、学、练、考，多种高效学习方式快速提升成绩</p>
+            </div>
+        </div>
+        </div>
+        <footer>
+            <p>
+                <a href="#">关于我们</a><span>|</span>
+                <a href="#">联系我们</a><span>|</span>
+                <a href="#">加入我们</a><span>|</span>
+                <a href="#">版权申明</a><span>|</span>
+                <a href="#">网站地图</a><span>|</span>
+                <a href="#">支付方式</a>
+            
+            </p>
+            <p> <span class="sp1">京ICP备10218183号-88</span>京ICP证161188号 
+            <img src="./img/gongbei.png" alt="">
+            <span class="sp1"> 京公网安备11010802020723号</span>
+            </p>
+            <p>Copyright©1999-2020 北京中公教育科技有限公司 .All Rights Reserved</p>
+            <div>
+                <img src="./img/sm_83x30.png" alt="">
+                <img src="./img/aqkx_83x30.png" alt="">
+                <img src="./img/showCreditLogo.png" alt="">
+            </div>
+        </footer>
+<script src="./common/Style.js"></script>
+<script src="./common/move.js"></script>
+<script src="./common/ajax.js"></script>
+<script src="./common/bangd.js"></script>
+<script src="./common/template-web.js"></script>
+<script type="text/html" id="b">
+    {{each shou value}}
+     <li>
+        <a href="{{value.hf}}">{{value.title}}
+            <img src="{{value.src}}" class="jt">
+        </a>
+        {{each value.fen Item}}
+        <ul id="ul_two">
+            <li><a href="#">{{Item.tit1}}</a></li>
+            <li><a href="#">{{Item.tit2}}</a></li>
+        </ul>
+        {{/each}}
+
+        {{each value.tu Item}}
+        <div>
+            <img src="{{Item.src}}" alt="">
+            <span>{{Item.span1}}</span>
+            <span>{{Item.span2}}</span>
+        </div>
+        {{/each}}
+    </li>
+    {{/each}}
+</script>
+<script>
+    CreateAjax({
+        "type":"get",
+        "url":"dome2.json",
+        "success":function(data){
+            show(JSON.parse(data))
+        }
+    })
+</script>
+<script src="./js/regist.js"></script>
+</body>
+</html>

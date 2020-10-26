@@ -1,0 +1,97 @@
+.wrop{
+    border-bottom: 1px solid #E6E6E6;
+}
+body{
+    background-color: white;
+}
+.left{
+    float: left;
+    width: 529px;
+    height: 336px;
+    text-align: center;
+    margin-top: 40px;
+    padding:0 5px 0 130px;
+    border-right: 1px solid #E6E6E6;
+}
+.left form {
+    position: relative;
+    text-align: center;
+}
+.left form input{
+    height: 36px;
+    width: 250px;
+    padding: 0 5px;
+    border: 1px solid #E6E6E6;
+}
+.left form p{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 500px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+}
+
+.left form p:last-child{
+    font-size: 12px;
+}
+.left form p:last-child a{
+    height: 45px;
+    line-height: 45px;
+    font-size: 12px;
+    padding-right: 30px;
+    text-decoration: underline;
+    color: orangered;
+}
+.left form button{
+    height: 36px;
+    width: 260px;
+    background-color: #FF4A00;
+    font-size: 16px;
+    color: white;
+}
+.left form .mian_a{
+    position: absolute;
+    right: 138px;
+    bottom: 92px;
+    font-size: 12px;
+}
+.left form .mian_a:hover{
+    color: orangered;
+}
+.left form span{
+    position: absolute;
+    right: 131px;
+    bottom: 151px;
+    width: 100px;
+    height: 36px;
+}
+.left form em{
+    font-size: 12px;
+    font-style: normal;
+    display: inline-block;
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+}
+.left form p:last-child{
+    margin-left: -81px;
+}
+.right{
+    float: right;
+    margin-top: 60px;
+    padding-right: 150px;
+}
+.right p{
+    font-size: 14px;
+    font-family: "华文中宋";
+    height: 40px;
+    line-height:40px;
+    color:rgba(0,0,0,0.8);
+}
+.main{
+    height: 488px;
+    clear: both;
+}

@@ -1,0 +1,420 @@
+body{
+    background-color: white;
+}
+.main{
+    background-color: #292929;
+    width: 100%;
+    height: 586px;
+}
+.main .inner{
+   clear: both;
+}
+.v_left{
+    position: relative;
+    width: 850px;
+    height: 481px;
+    float: left;
+}
+.v_left #v{
+    width: 100%;
+}
+.v_left .v_kong{
+    position: absolute;
+    left: 48px;
+    bottom: -44px;
+    color: red;
+}
+/* 播放的开关键 */
+.v_left .v_kong .kong_open{
+    width:30px ;
+    height: 33px;
+}
+.v_left .v_kong .kong_open .kong_play{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: url('../img/offcn_icnolh04.png') no-repeat;
+}
+.v_left .v_kong .kong_open .kong_play1{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: url('../img/offcn_icnolh03.png') no-repeat;
+}
+
+/* 播放的时间 */
+.v_left .v_kong .kong_time{
+    padding: 0px 10px;
+}
+/* 播放的进度条 */
+.v_left .v_kong .kong_chang{
+    height: 20px;
+    width: 500px;
+    position: relative;
+    top: 7px;
+}
+.v_left .v_kong .kong_chang .slide_bg{
+    width: 100%;
+    height: 10px;
+    background: url('../img/ujyx_50.png');
+}
+.v_left .v_kong .kong_chang .slide_l{
+    position: absolute;
+    top: 0px;
+    height: 10px;
+    background: blue;
+}
+.v_left .v_kong .kong_chang  a{
+    position: absolute;
+    left: -1px;
+    top: -6px;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: url('../img/offcn_icnolh05.png') no-repeat;
+}
+/* 播放的总时长 */
+.v_left .v_kong .kong_zotime{
+    padding: 0px 10px;
+}
+/* 是否全屏 */
+.v_left .v_kong .kong_quan{
+    position: absolute;
+    top: -6px;
+    right: -54px;
+    width: 39px;
+    height: 39px; 
+}
+.v_left .v_kong .kong_quan a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: url('../img/offcn_icnolh02.png') no-repeat;
+}
+.v_left>p #left_tit{
+    color: white;
+    height: 50px;
+    line-height: 50px;
+}
+.v_right{
+    float: left;
+    width: 338px;
+    height: 586px;
+}
+.v_right>p{
+    height: 50px;
+    line-height: 50px;
+}
+.v_right>p{
+    padding-left: 50px;
+}
+.v_right p>button{
+    height: 24px;
+    width: 86px;
+    border-radius: 5px;
+    border: 1px solid orangered;
+    color: orangered;
+    margin-left: 10px;
+    font-size: 12px;
+}
+.v_right>p>a{
+    font-size: 12px;
+    color: #999999;
+}
+.v_right .mulu{
+    width: 338px;
+    background-color: #1F1F1F;
+}
+.v_right .mulu .mu_p{
+    position: relative;
+    height: 46px;
+    line-height: 46px;
+    font-size: 12px;
+    color: #999999;
+    background-color: #3F3F3F;
+}
+.v_right .mulu .mu_p .tit{
+    display: inline-block;
+    width: 114px;
+    background-color: #323232;
+    text-align: center;
+}
+.v_right .mulu .mu_p .gun{
+    width: 44px;
+    display: inline-block;
+    height: 4px;
+    background-color: blue;
+    position: absolute;
+    bottom: 0px;
+    left: 36px;
+    display: none;
+}
+.v_right .mulu ul{
+    min-height: 440px;
+}
+.v_right .mulu ul li:first-child{
+    border-top: 1px solid #373737;
+}
+.v_right .mulu ul li{
+    font-size: 12px;
+    padding:17px 15px 10px 20px;
+    color: #999999;
+    border-bottom: 1px solid #373737;
+}
+.v_right .mulu ul li img{
+    width:16px;
+    height: 16px;
+}
+.v_right .mulu ul li a{
+    display: inline-block;
+    color: #999999;
+    width: 240px;
+    padding: 0px 5px;
+}
+.v_left .left_xianlu ul li{
+    float: left;
+    margin-left: 20px;
+    font-size: 12px;
+    height: 50px;
+    line-height: 50px;
+}
+.v_left .left_xianlu ul li a{
+    color: #999999;
+    padding: 0px 5px;
+}
+.v_left .left_xianlu ul li img{
+    vertical-align: middle;
+}
+.v_left .left_xianlu ul .xin_gs:hover{
+    text-decoration: underline;
+}
+.v_left .left_xianlu ul .xin_gs1:hover{
+    color: orangered;
+}
+/* 相关内容 */
+.xing_cont .cont_left{
+    width: 850px;
+    height: 550px;
+}
+.xing_cont .cont_left ul li{
+    width: 200px;
+    height: 200px;
+    background-color: #F8F8F8;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.xing_cont .cont_left ul li img{
+    height: 114px;
+    width: 200px;
+}
+.xing_cont .cont_left ul li .cl_a{
+    color: #666666;
+    display: inline-block;
+    width: 170px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.xing_cont .cont_left ul li .cl_a:hover{
+    text-decoration: underline;
+}
+.xing_cont .cont_left ul li>p{
+    height: 35px;
+    line-height: 35px;
+    padding-left: 10px;
+}
+.xing_cont .cont_left ul li .money{
+    color: orangered;
+}
+.xing_cont .cont_left ul li .listener{
+    color: #18B160;
+}
+.xing_cont .cont_left>p{
+    height: 90px;
+    line-height: 90px;
+}
+.xing_cont .cont_right{
+    margin-left: 20px;
+    width: 320px;
+}
+.xing_cont .cont_left #class_ul{
+    height: 420px;
+    overflow: hidden;
+}
+/* 学员评价 */
+.cont_right form{
+    height:110px;
+    position: relative;
+}
+.cont_right textarea{
+    width:300px;
+    height:80px;
+    padding-top:10px;
+    padding-left:10px;
+    margin-top: 10px;
+    color:rgb(153,153,153);
+    border:1px solid #e8e8e8;
+    resize: none;
+    border-radius: 5px;
+}
+.cont_right .fa{
+    position:absolute;
+    right: 30px;
+    bottom: 25px;
+    width: 50px;
+    height:24px;
+    color: white;
+    background-color: palegreen;
+}
+.xing_cont .cont_right .append dl{
+    width: 100%;
+    padding: 5px 0px;
+    border-bottom:1px solid lavender;
+}
+.xing_cont .cont_right .append dl img{
+  width: 60px;
+  height: 60px;
+  float: left;
+  vertical-align: middle;
+}
+.xing_cont .cont_right .append dl dd{
+    position: relative;
+}
+.xing_cont .cont_right .append dl dd span{
+    display: block;
+    font-size: 12px;
+}
+.xing_cont .cont_right .append dl dd p{
+    display: inline-block;
+    font-size: 12px;
+}
+.xing_cont .cont_right .append dl a{
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background-color: lawngreen;
+    font-size: 12px;
+    position:absolute;
+    right: 10px;
+    color: white;
+  }
+/* 底部 */
+footer{
+    position: relative;
+    color: #888888;;
+    padding: 40px 0px;
+    width: 100%;
+    background-color: #404144;
+    font-size: 12px;
+    text-align: center;
+}
+footer p:first-child{
+    margin-left: 576px; 
+    width: 446px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer p{
+    height: 26px;
+    line-height: 26px;
+}
+footer p a{
+    color: #888888;
+}
+footer p a:hover{
+    color: orangered;
+}
+footer p span{
+    margin: 0px 10px;
+    cursor: pointer;
+}
+footer p span.sp1:hover{
+    color: orangered;
+}
+footer div{
+    position: absolute;
+    right: 360px;
+    bottom: 50px;
+}
+/* 固定页面 */
+.gud{
+    position: fixed;
+    right: 10px;
+    bottom: 160px;
+}
+.gud .gun_one{
+    margin-top: 10px;
+}
+.gud .gun_one>div{
+    position: absolute;
+    right: 100px;
+    top: 0px;
+    display: none;
+}
+.gud .gun_one:first-child div{
+    width: 100px;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+.gud .gun_one:first-child div p{
+    font-size: 12px;
+    color: #888888
+}
+.gud .gun_one:nth-child(2) div{
+    width: 150px;
+    padding: 10px;
+    background-color: white;
+    position: absolute;
+    top: 50px;
+}
+.gud .gun_one:nth-child(2) div img{
+    float: left;
+    margin-right: 10px;
+}
+.gud .gun_one:nth-child(2) div p a{
+    color:skyblue ;
+}
+.gud .gun_one:nth-child(2) div p a:hover{
+    text-decoration: underline;
+}
+.gud .gun_one:nth-child(2) div p button{
+    background-color: red;
+    color: white;
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 5px;
+}
+.gud .gun_one:last-child div{
+    position: absolute;
+    top: 100px;
+    background-color: white;
+    padding: 20px;
+}
+.gud .gun_one:last-child p{
+    font-size: 12px;
+}
+.gud .gun_one>div.div_gs{
+    display: block;
+}
+#bt{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #1A84F0;
+    border-radius: 50%;
+    color:#1A84F0 ;
+    font-size: 40px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    display: none;
+}
+
